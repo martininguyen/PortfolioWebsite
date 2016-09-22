@@ -280,6 +280,7 @@ a.black:hover{
     margin-bottom: 12px;
 }
 
+
 @media (min-width:580px){
 	.sect {	
 		position: relative;
@@ -356,6 +357,10 @@ a.black:hover{
 		width: 100%;
 		height: 150%;
 		min-height: 1200px;
+	}
+	.photos{
+		left: 0%;
+		margin-left: 20%;
 	}
 }
 @media(min-width:870px){
