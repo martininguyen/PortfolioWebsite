@@ -36,10 +36,16 @@
 				<hr class="break">
 				<p class="section_paragraph"> 
 				I am passionate about front-end development, working with: <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>. 
-				In addition to front-end, I'm also experienced with full-stack developer using: <b>Node.js</b>, <b>SQL</b>, and <b>MongoDB</b>. <br> <br> 
+				In addition to front-end, I'm also experienced with full-stack development using: <b>Node.js</b>, <b>SQL</b>, or <b>MongoDB</b>. <br> <br> 
 				Besides coding, I love photography and video games. 
 				When I'm not working on a project, I am either out exploring new locations to shoot photos, playing Overwatch with my friends, or bowling.
 				
+			</div>
+			<div class="photos">
+				<img class="lazy fit" data-original="img/Photo.jpg" alt="me"/>
+				<img class="lazy fit" data-original="img/Lacma.jpg" alt="lacma"/>
+				<img class="lazy fit" data-original="img/Shoot.jpg" alt="shoot"/>
+				<img class="lazy fit" data-original="img/Tahoe.jpg" alt="tahoe"/>
 			</div>
 
 		</section>
@@ -57,7 +63,7 @@
 			<div class="grid">
 					<div class="grid-item ">
 						<div class="hovereffect">
-							<img src="img/Receptional_logo.png" alt="Rec"/>
+							<img class="lazy" data-original="img/Receptional_logo.png" alt="Rec"/>
 							<div class="overlay">
 								<button class="info" data-toggle="modal" data-target="#recep">See More</button>
 							</div>
@@ -65,7 +71,7 @@
 					</div>
 					<div class="grid-item ">
 						<div class="hovereffect">
-							<img src="img/TGEX_logo.png" alt="TGEX"/>
+							<img class="lazy" data-original="img/TGEX_logo.png" alt="TGEX"/>
 							<div class="overlay">
 								<button class="info" data-toggle="modal" data-target="#tgex">See More</button>
 							</div>
@@ -236,6 +242,7 @@
 		
 		
 		<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+		<script type="text/javascript" src="js/jquery.lazyload.js"></script>
 		<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/scroll.js"></script>
@@ -255,6 +262,11 @@
 				  $('#sticky').removeClass('fixed');
 				}
 			  });
+			});
+		</script>
+		<script>
+			$("img.lazy").lazyload({
+				effect : "fadeIn"
 			});
 		</script>
 	</body>
