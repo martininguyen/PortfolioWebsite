@@ -145,6 +145,11 @@ a.black:hover{
 	max-height: auto;
 }
 
+.fi{
+	max-width: 48px;
+	max-height: auto;
+}
+
 .section_header{
 	position: relative;
 	font-size: 20px;
@@ -612,7 +617,7 @@ a.black:hover{
 	
 	.break{
 		visibility: visible;
-		max-width: 1000px;
+		max-width: 1200px;
 		border-color:  #779ecb;
 	}
 
@@ -848,3 +853,13 @@ a.black:hover{
 	position: fixed;
 }
 
+.tooltip {
+	z-index: 1000;
+	position:absolute;
+	border:1px solid #333;
+	background-color:#fffff;
+	border-radius:5px;
+	padding:10px;
+	color:#fff;
+	font-size:12px Arial;
+}
