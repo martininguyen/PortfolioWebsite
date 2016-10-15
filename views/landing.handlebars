@@ -46,10 +46,10 @@
 			<br>
 			<br>
 			<div class="photos">
-				<img class="lazy fit" data-original="img/Photo.jpg" alt="me"/>
-				<img class="lazy fit" data-original="img/Lacma.jpg" alt="lacma"/>
-				<img class="lazy fit" data-original="img/Shoot.jpg" alt="shoot"/>
-				<img class="lazy fit" data-original="img/Tahoe.jpg" alt="tahoe"/>
+				<img id="rand1" class="lazy fit" data-original="img/Photo.jpg" alt="me"/>
+				<img id="rand2" class="lazy fit" data-original="img/Lacma.jpg" alt="lacma"/>
+				<img id="rand3" class="lazy fit" data-original="img/Shoot.jpg" alt="shoot"/>
+				<img id="rand4" class="lazy fit" data-original="img/Tahoe.jpg" alt="tahoe"/>
 			</div>
 
 		</section>
@@ -240,7 +240,10 @@
 				<br>
 				<br>
 				<div class="row">
-					<div class="col-xs-2 col-md-offset-2 col-md-2">
+					<div class="col-xs-2 col-md-offset-1 col-md-2">
+						<img src="img/lo.png" class="lazy fi icon" data-toggle="tooltip" data-placement="bottom" title="San Diego" alt="location" />
+					</div>
+					<div class="col-xs-2 col-md-2">
 						<img src="img/lo.png" class="lazy fi icon" data-toggle="tooltip" data-placement="bottom" title="San Diego" alt="location" />
 					</div>
 					<div class="col-xs-2 col-md-2">
@@ -252,7 +255,7 @@
 					<div class="col-xs-2 col-md-2">
 						<a href="https://linkedin.com/in/duymartinnguyen"><img class="lazy fi icon" data-toggle="tooltip" data-placement="bottom" title="https://linkedin.com/in/duymartinnguyen" src="img/in.png" alt="linkedin" /></a>
 					</div>
-					<div class="col-xs-2 col-md-2">
+					<div class="col-xs-2 col-md-1">
 						<a href="https://facebook.com/duymartinnguyen"><img class="lazy fi icon" data-toggle="tooltip" data-placement="bottom" title="https://facebook.com/duymartinnguyen" src="img/fb.png" alt="facebook"></a>
 					</div>
 				</div>
@@ -267,6 +270,7 @@
 		<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/scroll.js"></script>
+		<script type="text/javascript" src="js/konami.js"></script>
 		<script>
 			$('.grid').masonry({ 
 				isFitWidth: true,
